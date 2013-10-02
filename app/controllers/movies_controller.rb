@@ -14,6 +14,10 @@ class MoviesController < ApplicationController
     @movies = Movie.order("title").all
   end
 
+  def release_date_header
+    @movies = Movie.order("release_date").all
+  end
+
   def new
     # default: render 'new' template
   end
