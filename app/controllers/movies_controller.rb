@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
 
-  def sort_title
+  def title_header
     @movies = Movie.all
   end
 
