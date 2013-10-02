@@ -11,7 +11,7 @@ class MoviesController < ApplicationController
   end
 
   def title_header
-    @movies = Movie.all
+    @movies = Movie.order("title").all
   end
 
   def new
