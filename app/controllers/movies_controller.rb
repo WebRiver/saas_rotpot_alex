@@ -10,6 +10,10 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
 
+  def sort_title
+    @movies = Movie.all
+  end
+
   def new
     # default: render 'new' template
   end
